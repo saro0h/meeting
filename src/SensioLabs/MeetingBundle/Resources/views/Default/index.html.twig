@@ -1,5 +1,14 @@
-<a href="{{ url('sensiolabs_connect_new_session') }}">Connect</a>
+{% extends 'SensioLabsMeetingBundle::layout.html.twig' %}
 
-<a href="{{ url('sensiolabs_connect_new_session') }}?target=XXX">Connect</a>
+{% block body %}
+    <h1 class="cover-heading">Cover your page.</h1>
+    <p class="lead">
+        Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.
+    </p>
+    <p class="lead">
+        <a href="#" class="btn btn-lg btn-default">Learn more</a>
+    </p>
 
-Hello {{ name }}!
+    <a href="{{ url('sensiolabs_connect_new_session') }}">Connect</a>
+    <a href="{{ url('sensiolabs_connect_new_session') }}?target=/hello/lol">Connect</a>
+{% endblock %}

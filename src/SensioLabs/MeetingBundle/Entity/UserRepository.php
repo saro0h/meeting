@@ -1,9 +1,9 @@
 <?php
 
-namespace Sensiolabs\MeetingBundle\Repository;
+namespace SensioLabs\MeetingBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
-use Sensiolabs\Bundle\HowToBundle\Entity\User;
+use SensioLabs\MeetingBundle\Entity\User;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;

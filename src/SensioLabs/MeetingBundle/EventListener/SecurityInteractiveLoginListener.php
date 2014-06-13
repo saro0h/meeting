@@ -1,6 +1,6 @@
 <?php
 
-namespace Sensiolabs\MeetingBundle\EventListener;
+namespace SensioLabs\MeetingBundle\EventListener;
 
 use Doctrine\ORM\EntityManager;
 use SensioLabs\Connect\Security\Authentication\Token\ConnectToken;

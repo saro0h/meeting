@@ -1,6 +1,6 @@
 <?php
 
-namespace Sensiolabs\MeetingBundle\Entity;
+namespace SensioLabs\MeetingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use SensioLabs\Connect\Api\Entity\User as ConnectApiUser;
@@ -8,7 +8,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Table(name="sl_user")
- * @ORM\Entity(repositoryClass="Sensiolabs\MeetingBundle\Repository\UserRepository")
+ * @ORM\Entity(repositoryClass="SensioLabs\MeetingBundle\Entity\UserRepository")
  */
 class User implements UserInterface
 {
@@ -23,6 +23,11 @@ class User implements UserInterface
 
     /** @ORM\Column(type="string", length=255) */
     private $name;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Company", inversedBy="users")
+     */
+    private $company;
 
     public function __construct($uuid)
     {

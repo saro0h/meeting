@@ -12,3 +12,6 @@ security:
                 remember_me: false
                 provider: sensiolabs_connect
             anonymous: true
+            logout:
+                path: /logout
+                target: /
