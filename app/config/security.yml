@@ -1,7 +1,7 @@
 security:
     providers:
         sensiolabs_connect:
-            connect_memory: ~
+            id: sensiolabs_meeting.repository.user
     firewalls:
         dev: { pattern:  "^/(_(profiler|wdt)|css|images|js)/",  security: false }
         secured_area:
