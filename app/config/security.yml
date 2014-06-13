@@ -1,0 +1,14 @@
+security:
+    providers:
+        sensiolabs_connect:
+            connect_memory: ~
+    firewalls:
+        dev: { pattern:  "^/(_(profiler|wdt)|css|images|js)/",  security: false }
+        secured_area:
+            pattern:    ^/
+            sensiolabs_connect:
+                check_path: oauth_callback
+                login_path: sensiolabs_connect_new_session
+                remember_me: false
+                provider: sensiolabs_connect
+            anonymous: true

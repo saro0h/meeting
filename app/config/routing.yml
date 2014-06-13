@@ -1,0 +1,7 @@
+sensio_labs_meeting:
+    resource: "@SensioLabsMeetingBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+_sensiolabs_connect:
+    resource: "@SensioLabsConnectBundle/Resources/config/routing.xml"
